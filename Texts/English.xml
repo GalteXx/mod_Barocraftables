@@ -5,6 +5,7 @@
     <entityname.toolboxholder>Storage Container Shelf</entityname.toolboxholder>
     <entityname.clowntoolbox>Clown Storage Container</entityname.clowntoolbox>
     <entityname.voidtoolbox>Void Storage Container</entityname.voidtoolbox>
+    <entityname.wardrobe>Wardrobe</entityname.wardrobe>
     <!--DESCRIPTIONS-->
     <entitydescription.voidtoolbox>This container is way bigger on the inside. Pretty huge on outside as well\nCan fit Large items. Can only be stored on shelf</entitydescription.voidtoolbox>
     <entitydescription.supersteelcabinet>It's like large steel cabinet. But bigger!</entitydescription.supersteelcabinet>
