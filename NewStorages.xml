@@ -1,0 +1,89 @@
+<Items>
+  <Item name="" identifier="supersteelcabinet" tags="locker,container" linkable="true" pickdistance="150" waterproof="true" scale="0.5">
+    <Fabricate suitablefabricators="fabricatorm" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="steel" amount="12" />
+      <RequiredItem identifier="rubber" amount="4" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="steel" amount="6" />
+      <Item identifier="rubber" amount="3" />
+    </Deconstruct>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" hudpriority="20" depth="9">
+      <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+      <Button text="Rotation 0">
+        <StatusEffect type="OnUse" targettype="This" rotation="0" setvalue="true" />
+      </Button>
+      <Button text="Rotation 90">
+        <StatusEffect type="OnUse" targettype="This" rotation="90" setvalue="true" />
+      </Button>
+      <Button text="Rotation 180">
+        <StatusEffect type="OnUse" targettype="This" rotation="180" setvalue="true" />
+      </Button>
+      <Button text="Rotation 270">
+        <StatusEffect type="OnUse" targettype="This" rotation="270" setvalue="true" />
+      </Button>
+    </CustomInterface>
+    <ConnectionPanel />
+    <Sprite texture="%ModDir%/Textures/SuperSteelCabinet.png" sourcerect="0, 0, 350, 359" depth="0.84" origin="0.5,0.5" />
+    <ItemContainer capacity="63" slotsperrow="9" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect" maxstacksize="256">
+      <GuiFrame relativesize="0.38,0.68" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" excludedidentifiers="mobilecontainer" />
+      <SubContainer capacity="15" maxstacksize="1" slotsperrow="5">
+        <SlotIcon texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+        <Containable items="mobilecontainer" />
+      </SubContainer>
+    </ItemContainer>
+    <Body width="364" height="373" density="40" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.25" setvalue="true" />
+    </Holdable>
+  </Item>
+  <Item name="" identifier="toolboxholder" category="container" tags="container, toolboxholder" pickdistance="50" scale="0.5">
+    <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="10" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" hudpriority="20" depth="9">
+      <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+      <Button text="Rotation 0">
+        <StatusEffect type="OnUse" targettype="This" rotation="0" setvalue="true" />
+      </Button>
+      <Button text="Rotation 90">
+        <StatusEffect type="OnUse" targettype="This" rotation="90" setvalue="true" />
+      </Button>
+      <Button text="Rotation 180">
+        <StatusEffect type="OnUse" targettype="This" rotation="180" setvalue="true" />
+      </Button>
+      <Button text="Rotation 270">
+        <StatusEffect type="OnUse" targettype="This" rotation="270" setvalue="true" />
+      </Button>
+    </CustomInterface>
+    <Sprite name="Storage Container Holder" texture="%ModDir%/Textures/ToolBoxHolder.png" depth="0.84" sourcerect="22, 1, 214, 69" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="10" maxstacksize="1" slotsperrow="5" itempos="15, 8" iteminterval="18, 0" itemsperrow="10" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <SlotIcon slotindex="0" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="7" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="8" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <SlotIcon slotindex="9" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+      <Containable items="toolbox, clowntoolbox, voidtoolbox" excludebroken="false" excludefullcondition="false">
+      </Containable>
+    </ItemContainer>
+    <Body width="107" height="34" density="10" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.25" setvalue="true" />
+    </Holdable>
+  </Item>
+</Items>

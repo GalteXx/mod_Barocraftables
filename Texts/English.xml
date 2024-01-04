@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+    <!--NAMES-->
+    <entityname.supersteelcabinet>Huge Steel Cabinet</entityname.supersteelcabinet>
+    <entityname.toolboxholder>Storage Container Shelf</entityname.toolboxholder>
+    <entityname.clowntoolbox>Clown Storage Container</entityname.clowntoolbox>
+    <entityname.voidtoolbox>Void Storage Container</entityname.voidtoolbox>
+    <!--DESCRIPTIONS-->
+    <entitydescription.voidtoolbox>This container is way bigger on the inside. Pretty huge on outside as well\nCan fit Large items. Can only be stored on shelf</entitydescription.voidtoolbox>
+    <entitydescription.supersteelcabinet>It's like large steel cabinet. But bigger!</entitydescription.supersteelcabinet>
+    <entitydescription.clowntoolbox>How do clowns even get inside?\nProvides no air, but immune to pressure</entitydescription.clowntoolbox>
+    <entitydescription.toolboxholder>Fancy shelf for storing up to ten Storage Containers, no matter the size</entitydescription.toolboxholder>
+</infotexts>
