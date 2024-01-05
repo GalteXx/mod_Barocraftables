@@ -30,16 +30,17 @@
                 </Button>
             </CustomInterface>
             <Sprite name="Diving Suit Locker Vertical" texture="Content/Items/Containers/containers.png" depth="0.84" sourcerect="714,1,99,256" origin="0.5,0.5" />
-            <LightComponent range="64.0" lightcolor="255,255,255,63" IsOn="true" powerconsumption="10" castshadows="false" allowingameediting="false">
+            <LightComponent range="64.0" lightcolor="255,255,255,63" IsOn="false" castshadows="false" allowingameediting="false">
                 <LightTexture texture="%ModDir%/Textures/divingsuitlocker_light_radius.png" sourcerect="0,0,256,256" origin="0.5,0.5" depth="0.01" alpha="1.0" />
+                <StatusEffect type="Always" targettype="This" IsOn="false" setvalue="true"/>
             </LightComponent>
             <Powered powerconsumption="10" currpowerconsumption="10" isactive="true">
                 <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
             </Powered>
             <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="0,0" iteminterval="0,0" canbeselected="true" msg="ItemMsgInteractSelect">
                 <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
-                <Containable items="deepdiving" excludeditems="deepdivinglarge" >
-                    <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true"/>
+                <Containable items="deepdiving" excludeditems="deepdivinglarge">
+                    <StatusEffect type="OnContaining" targettype="This" IsOn="true" setvalue="true"/>
                 </Containable>
             </ItemContainer>
             <Body width="99" height="251" density="40" />
