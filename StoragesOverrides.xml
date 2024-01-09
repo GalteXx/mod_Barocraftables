@@ -1,6 +1,7 @@
 <Override>
     <Items>
-        <Item name="" identifier="divingsuitlocker" category="Diving" tags="container,divingsuitcontainer,divingsuitcontainerwindow" pickdistance="50" scale="0.5">
+        <Item name="" identifier="divingsuitlocker" category="Diving" tags="container,divingsuitcontainer,divingsuitcontainerwindow" pickdistance="50"
+            scale="0.5">
             <Fabricate suitablefabricators="fabricatorm" requiredtime="20">
                 <RequiredSkill identifier="mechanical" level="30" />
                 <RequiredItem identifier="steel" amount="2" />
@@ -29,22 +30,27 @@
                     <StatusEffect type="OnUse" targettype="This" rotation="270" setvalue="true" />
                 </Button>
             </CustomInterface>
-            <Sprite name="Diving Suit Locker Vertical" texture="Content/Items/Containers/containers.png" depth="0.84" sourcerect="714,1,99,256" origin="0.5,0.5" />
+            <Sprite name="Diving Suit Locker Vertical" texture="Content/Items/Containers/containers.png" depth="0.84" sourcerect="714,1,99,256"
+                origin="0.5,0.5" />
             <LightComponent range="64.0" lightcolor="255,255,255,63" IsOn="false" castshadows="false" allowingameediting="false">
-                <LightTexture texture="%ModDir%/Textures/divingsuitlocker_light_radius.png" sourcerect="0,0,256,256" origin="0.5,0.5" depth="0.01" alpha="1.0" />
-                <StatusEffect type="Always" targettype="This" IsOn="false" setvalue="true"/>
+                <LightTexture texture="%ModDir%/Textures/divingsuitlocker_light_radius.png" sourcerect="0,0,256,256" origin="0.5,0.5" depth="0.01"
+                    alpha="1.0" />
+                <StatusEffect type="Always" targettype="This" IsOn="false" setvalue="true" />
             </LightComponent>
             <Powered powerconsumption="10" currpowerconsumption="10" isactive="true">
-                <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
+                <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI"
+                    msg="ItemMsgInteractSelect" />
             </Powered>
-            <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="0,0" iteminterval="0,0" canbeselected="true" msg="ItemMsgInteractSelect">
+            <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="0,0" iteminterval="0,0" canbeselected="true"
+                msg="ItemMsgInteractSelect">
                 <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
                 <Containable items="deepdiving" excludeditems="deepdivinglarge">
-                    <StatusEffect type="OnContaining" targettype="This" IsOn="true" setvalue="true"/>
+                    <StatusEffect type="OnContaining" targettype="This" IsOn="true" setvalue="true" />
                 </Containable>
             </ItemContainer>
             <Body width="99" height="251" density="40" />
-            <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+            <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
+                handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
                 <RequiredItem identifier="crowbar" type="Equipped" />
                 <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
                 <StatusEffect type="OnActive" target="This">
@@ -62,7 +68,8 @@
                     <Affliction identifier="burn" strength="5" />
                 </StatusEffect>
                 <RequiredItem items="screwdriver" type="Equipped" />
-                <ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+                <ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0"
+                    maxcondition="15.0" />
                 <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
                 <input name="power_in" displayname="connection.powerin" />
             </ConnectionPanel>

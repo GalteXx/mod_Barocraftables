@@ -35,7 +35,8 @@
             </SubContainer>
         </ItemContainer>
         <Body width="364" height="373" density="40" />
-        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
+            handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
             <RequiredItem identifier="crowbar" type="Equipped" />
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.25" setvalue="true" />
         </Holdable>
@@ -64,20 +65,24 @@
                 <StatusEffect type="OnUse" targettype="This" rotation="270" setvalue="true" />
             </Button>
         </CustomInterface>
-        <Sprite name="Storage Container Holder" texture="%ModDir%/Textures/ToolBoxHolder.png" depth="0.84" sourcerect="22, 1, 214, 69" origin="0.5,0.5" />
-        <ItemContainer hideitems="false" drawinventory="true" capacity="10" maxstacksize="1" slotsperrow="5" itempos="15, 8" iteminterval="18, 0" itemsperrow="10" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
+        <Sprite name="Storage Container Holder" texture="%ModDir%/Textures/ToolBoxHolder.png" depth="0.84" sourcerect="22, 1, 214, 69"
+            origin="0.5,0.5" />
+        <ItemContainer hideitems="false" drawinventory="true" capacity="10" maxstacksize="1" slotsperrow="5" itempos="15, 8" iteminterval="18, 0"
+            itemsperrow="10" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
             <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
             <SlotIcon texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
             <Containable items="toolbox, clowntoolbox, voidtoolbox" excludebroken="false" excludefullcondition="false">
             </Containable>
         </ItemContainer>
         <Body width="107" height="34" density="10" />
-        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
+            handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
             <RequiredItem identifier="crowbar" type="Equipped" />
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.25" setvalue="true" />
         </Holdable>
     </Item>
-    <Item name="" identifier="wardrobe" tags="container" linkable="true" width="80" height="128" texturescale="1.0,1.0" scale="0.5" category="Decorative">
+    <Item name="" identifier="wardrobe" tags="container" linkable="true" width="80" height="128" texturescale="1.0,1.0" scale="0.5"
+        category="Decorative">
         <Fabricate suitablefabricators="fabricatorm" requiredtime="10">
             <RequiredSkill identifier="mechanical" level="15" />
             <RequiredItem identifier="plastic" amount="1" />
@@ -107,7 +112,8 @@
             <Containable items="smallitem, clothing" excludedidentifiers="mobilecontainer" />
         </ItemContainer>
         <Body width="80" height="128" density="40" />
-        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
+            handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
             <RequiredItem identifier="crowbar" type="Equipped" />
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true" />
         </Holdable>

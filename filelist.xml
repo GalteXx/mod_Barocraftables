@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="BaroCraftables++" modversion="0.1.6" corepackage="False" steamworkshopid="3129574518" gameversion="1.2.7.0">
+<contentpackage name="BaroCraftables++" modversion="0.1.8" corepackage="False" steamworkshopid="3129574518" gameversion="1.2.7.0">
   <Item file="%ModDir%/NewStorages.xml" />
   <Item file="%ModDir%/StoragesOverrides.xml" />
   <Item file="%ModDir%/ToolsOverrides.xml" />
   <Item file="%ModDir%/NewTools.xml" />
+  <Item file="%ModDir%/WeaponsOverride.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
 </contentpackage>

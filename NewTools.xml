@@ -1,5 +1,6 @@
 <Items>
-    <Item name="" identifier="clowntoolbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,clown" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="footstep_clown" RequireAimToUse="True">
+    <Item name="" identifier="clowntoolbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,clown" cargocontaineridentifier=""
+        showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="footstep_clown" RequireAimToUse="True">
         <Deconstruct time="10">
             <Item identifier="toolbox" />
         </Deconstruct>
@@ -11,13 +12,15 @@
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Textures/clowntoolbox.png" sourcerect="31, 1, 84, 67" origin="0.5,0.6" />
         <Sprite texture="%ModDir%/Textures/clowntoolbox.png" sourcerect="31, 1, 84, 67" origin="0.5,0.6" depth="0.6" />
-        <ContainedSprite name="Clown Storage Container Rotated" allowedcontainertags="toolboxholder" texture="%ModDir%/textures/clowntoolbox.png" sourcerect="1, 1, 18, 60" depth="0.55" origin="-0.12,-0.14" />
+        <ContainedSprite name="Clown Storage Container Rotated" allowedcontainertags="toolboxholder" texture="%ModDir%/textures/clowntoolbox.png"
+            sourcerect="1, 1, 18, 60" depth="0.55" origin="-0.12,-0.14" />
         <Body width="90" height="60" density="20" />
-        <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect" DisableWhenRangedWeaponEquipped="true">
+        <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50"
+            combatpriority="6" msg="ItemMsgPickUpSelect" DisableWhenRangedWeaponEquipped="true">
             <Attack structuredamage="0" itemdamage="1" targetimpulse="2">
                 <Affliction identifier="stun" strength="3" />
                 <StatusEffect type="OnUse" target="UseTarget">
-                    <Sound file="Content/Items/Weapons/honk.ogg" selectionmode="random" range="500"/>
+                    <Sound file="Content/Items/Weapons/honk.ogg" selectionmode="random" range="500" />
                     <Sound file="Content/Items/Weapons/ToyHammerHit2.ogg" range="500" />
                 </StatusEffect>
             </Attack>
@@ -25,7 +28,8 @@
         <ItemContainer capacity="12" maxstacksize="64" keepopenwhenequipped="true" movableframe="true" QuickUseMovesItemsInside="false">
             <Containable items="smallitem" />
         </ItemContainer>
-        <Controller UserPos="0,-20" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByOther="false" selectkey="Use" drawuserbehind="true" msg="itemmsggoinside">
+        <Controller UserPos="0,-20" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByOther="false" selectkey="Use"
+            drawuserbehind="true" msg="itemmsggoinside">
             <limbposition limb="Head" position="74,-40" />
             <limbposition limb="Torso" position="74,-40" />
             <limbposition limb="Waist" position="74,-40" />
@@ -36,21 +40,24 @@
             <limbposition limb="RightFoot" position="74,-40" />
             <limbposition limb="LeftFoot" position="74,-40" />
             <StatusEffect type="OnActive" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" PressureProtection="10000.0" />
-            <StatusEffect type="OnActive" targettype="Character" delay="0.25" stackable="true" indetectable="true" DisableFocusingOnEntities="true" invisibletimer="0.1" IgnoreMeleeWeapons="true" setvalue="true"/>
+            <StatusEffect type="OnActive" targettype="Character" delay="0.25" stackable="true" indetectable="true" DisableFocusingOnEntities="true"
+                invisibletimer="0.1" IgnoreMeleeWeapons="true" setvalue="true" />
         </Controller>
     </Item>
-    <Item name="" identifier="voidtoolbox" category="Equipment" tags="largeitem,tool" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <Item name="" identifier="voidtoolbox" category="Equipment" tags="largeitem,tool" cargocontaineridentifier="" showcontentsintooltip="true"
+        Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
         <Fabricate suitablefabricators="fabricatorm" requiredtime="40">
             <RequiredSkill identifier="mechanical" level="50" />
-            <RequiredItem identifier="plastic" amount="6"/>
-            <RequiredItem identifier="rubber" amount="4"/>
-            <RequiredItem identifier="supersteelcabinet"/>
-            <RequiredItem identifier="dementonite"/>
-            <RequiredItem identifier="fulgurium"/>
-          </Fabricate>
+            <RequiredItem identifier="plastic" amount="6" />
+            <RequiredItem identifier="rubber" amount="4" />
+            <RequiredItem identifier="supersteelcabinet" />
+            <RequiredItem identifier="dementonite" />
+            <RequiredItem identifier="fulgurium" />
+        </Fabricate>
         <InventoryIcon texture="%ModDir%/Textures/voidtoolbox.png" sourcerect="32, 4, 100, 77" origin="0.5,0.6" />
         <Sprite texture="%ModDir%/Textures/voidtoolbox.png" sourcerect="32, 4, 100, 77" origin="0.5,0.5" depth="0.6" />
-        <ContainedSprite name="Storage Container Rotated" allowedcontainertags="toolboxholder" texture="%ModDir%/Textures/voidtoolbox.png" sourcerect="1, 1, 17, 70" depth="0.55" origin="-0.12,0.03" />
+        <ContainedSprite name="Storage Container Rotated" allowedcontainertags="toolboxholder" texture="%ModDir%/Textures/voidtoolbox.png"
+            sourcerect="1, 1, 17, 70" depth="0.55" origin="-0.12,0.03" />
         <Body width="90" height="60" density="20" />
         <Holdable slots="RightHand,LeftHand" msg="ItemMsgPickUpSelect" handle1="0,40" holdangle="90">
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
