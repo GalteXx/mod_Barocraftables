@@ -637,7 +637,7 @@
                 <Item identifier="steel" amount="3" />
                 <Item identifier="titaniumaluminiumalloy" amount="1" />
             </Deconstruct>
-            <CustomInterface canbeselected="true" drawhudwhenequipped="true" hudpriority="20" depth="9">
+            <CustomInterface canbeselected="false" drawhudwhenequipped="true" hudpriority="20" depth="9">
                 <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
                 <Button text="Rotation 0">
                     <StatusEffect type="OnUse" targettype="This" rotation="0" setvalue="true" />
