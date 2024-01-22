@@ -25,9 +25,13 @@
                 </StatusEffect>
             </Attack>
         </MeleeWeapon>
-        <ItemContainer capacity="12" maxstacksize="64" keepopenwhenequipped="true" movableframe="true" QuickUseMovesItemsInside="false">
+        <ItemContainer capacity="12" maxstacksize="64" movableframe="true" QuickUseMovesItemsInside="false">
             <Containable items="smallitem" />
         </ItemContainer>
+        <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+            <sprite name="Clown Storage Container Rotated" origin="1.4,-0.1"
+                texture="%ModDir%/textures/clowntoolbox.png" sourcerect="1, 1, 18, 60" inherittexturescale="true" limb="Torso" />
+        </Wearable>
         <Controller UserPos="0,-20" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByOther="false" selectkey="Use"
             drawuserbehind="true" msg="itemmsggoinside">
             <limbposition limb="Head" position="74,-40" />

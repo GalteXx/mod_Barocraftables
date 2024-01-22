@@ -13,7 +13,7 @@
             </ConnectionPanel>
             <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
                 <RequiredSkill identifier="mechanical" level="40" />
-                <RequiredSkill identifier="weapon" level="40" />
+                <RequiredSkill identifier="weapons" level="40" />
                 <RequiredItem identifier="steel" amount="6" />
                 <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
                 <RequiredItem identifier="fpgacircuit" />
@@ -58,7 +58,7 @@
             linkable="true" allowedlinks="turretammosource">
             <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
                 <RequiredSkill identifier="mechanical" level="20" />
-                <RequiredSkill identifier="weapon" level="10" />
+                <RequiredSkill identifier="weapons" level="10" />
                 <RequiredItem identifier="steel" amount="2" />
                 <RequiredItem identifier="plastic" />
             </Fabricate>
@@ -88,6 +88,13 @@
                 <input name="toggle_light" displayname="connection.togglelight" />
                 <input name="set_light" displayname="connection.setlight" />
             </ConnectionPanel>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
             <!--This
             part of xml was made by Ricky (creator of
             Barocraftables+)-->
@@ -147,7 +154,7 @@
             </ConnectionPanel>
             <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
                 <RequiredSkill identifier="mechanical" level="20" />
-                <RequiredSkill identifier="weapon" level="10" />
+                <RequiredSkill identifier="weapons" level="10" />
                 <RequiredItem identifier="steel" amount="2" />
                 <RequiredItem identifier="plastic" />
             </Fabricate>
@@ -155,6 +162,13 @@
                 <Item identifier="steel" amount="3" />
                 <Item identifier="titaniumaluminiumalloy" amount="1" />
             </Deconstruct>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
             <!--This
             part of xml was made by Ricky (creator of
             Barocraftables+)-->
@@ -266,6 +280,13 @@
                     <DropContainedItems />
                 </StatusEffect>
             </Holdable>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
         </Item>
 
         <Item name="" description="" identifier="doublecoilgun" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5"
@@ -346,6 +367,13 @@
                     <DropContainedItems />
                 </StatusEffect>
             </Holdable>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
         </Item>
 
         <Item name="" identifier="coilgunloader" tags="coilgunequipment,coilgunammosource,turretammosource,coilgunammoloader"
@@ -539,6 +567,14 @@
                 </Button>
                 <Button text="Rotation 270">
                     <StatusEffect type="OnUse" targettype="This" rotation="270" setvalue="true" />
+                </Button>
+            </CustomInterface>
+            <!--Rotation Resetter-->
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
                 </Button>
             </CustomInterface>
             <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
@@ -761,6 +797,13 @@
                     <DropContainedItems />
                 </StatusEffect>
             </Holdable>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
         </Item>
 
         <Item name="" identifier="pulselaserloader" tags="pulselaserequipment,pulselaserammosource,turretammosource" category="Machine,Weapon"
@@ -962,6 +1005,13 @@
                     <DropContainedItems />
                 </StatusEffect>
             </Holdable>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
         </Item>
 
         <Item name="" identifier="flakcannonloader" tags="flakcannonequipment,flakcannonammosource,turretammosource,flakcannonammoloader"
@@ -1150,6 +1200,13 @@
                     <DropContainedItems />
                 </StatusEffect>
             </Holdable>
+            <CustomInterface canbeselected="true" drawhudwhenequipped="false" hudpriority="20" depth="9" msg="[Wrench] Reset Rotation">
+                <RequiredItem items="wrench" type="Equipped" />
+                <GuiFrame relativesize="0.15,0.15" anchor="BottomCenter" absoluteoffset="20,20" style="ItemUI" />
+                <Button text="Unlock Rotation">
+                    <StatusEffect type="OnUse" targettype="This" rotationlimits="-361, 0" setvalue="true" />
+                </Button>
+            </CustomInterface>
         </Item>
         <Item name="" identifier="railgunloadersmall" nameidentifier="railgunloader"
             tags="railgunequipment,railgunammosource,turretammosource,railgunammoloader" category="Machine,Weapon" linkable="true"
