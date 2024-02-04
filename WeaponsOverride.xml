@@ -13,12 +13,9 @@
             </ConnectionPanel>
             <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
                 <RequiredSkill identifier="mechanical" level="40" />
-                <RequiredSkill identifier="weapons" level="40" />
                 <RequiredItem identifier="steel" amount="6" />
-                <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-                <RequiredItem identifier="fpgacircuit" />
-                <RequiredItem identifier="plastic" />
-                <RequiredItem identifier="rubber" />
+                <RequiredItem identifier="fpgacircuit" amount="1"/>
+                <RequiredItem identifier="plastic" amount="1"/>
             </Fabricate>
             <Deconstruct time="20">
                 <Item identifier="steel" amount="3" />
@@ -60,7 +57,7 @@
                 <RequiredSkill identifier="mechanical" level="20" />
                 <RequiredSkill identifier="weapons" level="10" />
                 <RequiredItem identifier="steel" amount="2" />
-                <RequiredItem identifier="plastic" />
+                <RequiredItem identifier="plastic" amount="1"/>
             </Fabricate>
             <Deconstruct time="20">
                 <Item identifier="steel" amount="3" />
@@ -155,8 +152,9 @@
             <Fabricate suitablefabricators="fabricatorm" requiredtime="30">
                 <RequiredSkill identifier="mechanical" level="20" />
                 <RequiredSkill identifier="weapons" level="10" />
-                <RequiredItem identifier="steel" amount="2" />
-                <RequiredItem identifier="plastic" />
+                <RequiredItem identifier="steel" amount="8" />
+                <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+                <RequiredItem identifier="plastic" amount="1"/>
             </Fabricate>
             <Deconstruct time="20">
                 <Item identifier="steel" amount="3" />

@@ -6,10 +6,12 @@
     <entityname.clowntoolbox>Clown Storage Container</entityname.clowntoolbox>
     <entityname.voidtoolbox>Void Storage Container</entityname.voidtoolbox>
     <entityname.wardrobe>Wardrobe</entityname.wardrobe>
+    <entityname.steeringwheel>Steering Wheel</entityname.steeringwheel>
     <!--DESCRIPTIONS-->
     <entitydescription.voidtoolbox>This container is way bigger on the inside. Pretty huge on outside as well\nCan fit Large items. Can only be stored on shelf</entitydescription.voidtoolbox>
     <entitydescription.supersteelcabinet>It's like large steel cabinet. But bigger!</entitydescription.supersteelcabinet>
     <entitydescription.clowntoolbox>How do clowns even get inside?\nProvides no air, but immune to pressure</entitydescription.clowntoolbox>
     <entitydescription.toolboxholder>Fancy shelf for storing up to ten Storage Containers, no matter the size</entitydescription.toolboxholder>
     <entitydescription.wardrobe>Neat way to store a lot of clothing</entitydescription.wardrobe>
+
 </infotexts>
