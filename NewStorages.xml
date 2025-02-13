@@ -107,9 +107,9 @@
         </CustomInterface>
         <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="400,0,80,128" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
         <ItemContainer capacity="72" slotsperrow="9" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+            <Containable items="clothing" excludedidentifiers="mobilecontainer" />
             <GuiFrame relativesize="0.38,0.68" anchor="Center" style="ItemUI" />
             <SlotIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="524,140,100,92" origin="0.5,0.5" />
-            <Containable items="smallitem, clothing" excludedidentifiers="mobilecontainer" />
         </ItemContainer>
         <Body width="80" height="128" density="40" />
         <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="[E] Detach (Crowbar)" PickingTime="2.0" aimpos="65,-10"
