@@ -407,7 +407,7 @@
                     <Affliction identifier="stun" strength="4" />
                 </StatusEffect>
             </Repairable>
-            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="82,-270" iteminterval="0,0"
+            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="0, -80" iteminterval="0,0"
                 itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
                 <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
                 <Containable items="coilgunammo" />
@@ -622,7 +622,7 @@
                     <Affliction identifier="stun" strength="4" />
                 </StatusEffect>
             </Repairable>
-            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="75,-270" iteminterval="0,0"
+            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="0, -80" iteminterval="0,0"
                 itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
                 <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
                 <Containable items="chaingunammo" />
@@ -844,7 +844,7 @@
                     <Affliction identifier="stun" strength="4" />
                 </StatusEffect>
             </Repairable>
-            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="83,-260" iteminterval="0,0"
+            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="0, -80" iteminterval="0,0"
                 itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.75">
                 <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
                 <Containable items="pulselaserammo" />
@@ -1047,7 +1047,7 @@
                     <Affliction identifier="stun" strength="4" />
                 </StatusEffect>
             </Repairable>
-            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="75,-258" iteminterval="0,0"
+            <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="0, -80" iteminterval="0,0"
                 itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
                 <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
                 <Containable items="flakcannonammo" />
@@ -1221,7 +1221,7 @@
             <DecorativeSprite name="Railgun Loader Frame Front" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200"
                 origin="0.5,0.5"
                 offset="0,-30" />
-            <ItemContainer hideitems="false" drawinventory="true" capacity="6" slotsperrow="6" itempos="58,-200" iteminterval="20,0" itemrotation="90"
+            <ItemContainer hideitems="false" drawinventory="true" capacity="6" slotsperrow="6" itempos="-40, -80" iteminterval="20,0" itemrotation="90"
                 canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795">
                 <GuiFrame relativesize="0.25,0.2" anchor="Center" style="ItemUI" />
                 <Containable items="railgunammo" />
